@@ -1,0 +1,22 @@
+.card {
+  background: var(--grey-100);
+  color: var(--grey-700);
+  border-radius: 8px;
+  box-shadow: var(--base-shadow);
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding: 2rem;
+  position: relative;
+
+  img {
+    border: 1px solid var(--primary-main);
+    border-radius: 8px;
+    outline: 2px solid var(--primary-lighter);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

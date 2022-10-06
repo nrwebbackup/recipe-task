@@ -1,0 +1,24 @@
+.primary-button {
+  background: var(--primary-main);
+  box-shadow: none;
+  color: var(--secondary-main);
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 4px;
+  text-transform: none;
+  max-height: 36px;
+  min-width: 78px;
+  max-height: 36px;
+  border: 1px solid var(--primary-main);
+
+  &:disabled {
+    background: var(--grey-120);
+    border: none;
+    color: var(--tertiary-dark);
+  }
+
+  &:hover {
+    background: var(--primary-light);
+    box-shadow: none;
+  }
+}
