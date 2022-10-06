@@ -8,7 +8,7 @@ export const searchRecipes = async (query: string) => {
 
   try {
     result = await axios(
-      `${import.meta.env.VITE_MEAL_API_URL}/search.php?s=${query}`
+      `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`
     );
   } catch (err) {
     console.log(err);

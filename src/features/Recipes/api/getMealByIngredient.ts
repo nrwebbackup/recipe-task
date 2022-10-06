@@ -8,7 +8,7 @@ export const getRecipesByIngredient = async (ingredient: string) => {
 
   try {
     result = await axios(
-      `${import.meta.env.VITE_MEAL_API_URL}/filter.php?i=${ingredient}`
+      `https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient}`
     );
   } catch (err) {
     console.log(err);

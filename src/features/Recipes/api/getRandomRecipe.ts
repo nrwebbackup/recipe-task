@@ -7,7 +7,7 @@ export const getRandomRecipe = async () => {
   let result;
 
   try {
-    result = await axios(`${import.meta.env.VITE_MEAL_API_URL}/random.php`);
+    result = await axios(`https://www.themealdb.com/api/json/v1/1/random.php`);
   } catch (err) {
     console.log(err);
   }
